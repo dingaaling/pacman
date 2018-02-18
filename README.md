@@ -17,7 +17,9 @@ contains test cases used to build/refine the game
 ## playing the game
 <br />
 
-to play the game, edit the input file to the desired game and moves you'd like. for example: <br />
+to play the game, simply run the following command: `python3 pacman.py <input-file.txt>`. the program can accept variable name input files <br />
+
+you can edit the input file to the desired game and moves you'd like. for example: <br />
 
 5 5 <br />
 1 2 <br />
