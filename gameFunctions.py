@@ -1,7 +1,8 @@
 import sys
 import numpy as np
 
-# Visualize board positions: 1   - Positions with Coins | 0   - Starting Point | Nan - Walls
+# Visualize board positions: 1  - Positions with Coins | 0  - Starting Point | NaN - Walls
+# Board is oriented in Numpy r,c format
 def createBoard(boardDim, pos, walls):
     board = np.ones((boardDim[0], boardDim[1]))
     board[pos[0], pos[1]] = 0
@@ -17,7 +18,8 @@ def flipBoard(board):
     return finalBoard
 
 # Dictionary of possible positions; walls are excluded because they are not available positions
-# Starting point is denoted by 0; Other points are given 1 to denote available token. This is updated to 0 when Pacman moves onto the point, collecting the coin
+# Starting point is denoted by 0; Other points are given 1 to denote available token.
+# Value of the point is updated to "0" by the makeMoves function when pacman moves onto the point, collecting the coin
 def makeBoardDict(board):
     boardDict = {}
 
@@ -48,7 +50,10 @@ def convertMoves(moves):
 
     return moveList
 
-# Check moves in boardDict to update Position and Coin count
+# Update position and coin count for each move of the game
+# If the position is available (not a wall), position is updated and if a coin is available, it is collected.
+# After the coin is collected the value of the position is changed to 0
+# The final position and coincount are returned
 def makeMoves(startPos, moveList, boardDict):
     pos = startPos
     coinCount = 0
@@ -71,7 +76,7 @@ def makeMoves(startPos, moveList, boardDict):
 
     return pos
 
-# Check the input file has the appropriate number of lines and kind of input for each line
+# Check that the input file has the appropriate number of lines and kind of input for each line
 def checkInput(inputVal):
 
     if len(inputVal) < 4:
@@ -86,7 +91,7 @@ def checkInput(inputVal):
     else:
         return True
 
-# Check the dimensions and position of board, starting point, and walls are valid
+# Check that the dimensions and position of board, starting point, and walls inputs are valid
 def checkDim(boardDim, startPos, moves, walls):
 
     # Check dimensions for numbers
@@ -115,7 +120,7 @@ def checkDim(boardDim, startPos, moves, walls):
     else:
         return True
 
-# Play and save game
+# Play and save game to game-file.txt
 def playGame(boardDim, startPos, moves, walls):
     startBoard = createBoard(boardDim, startPos, walls)
     boardDict = makeBoardDict(startBoard)

@@ -5,7 +5,9 @@ import sys
 import numpy as np
 from gameFunctions import *
 
-# Read input-file.txt for game intializations: board dim, starting position, moves, and walls
+# Read input file for game intializations: board dim, starting position, moves, and walls
+# Example: python3 pacman.py input-file.txt
+
 def main():
 
     args = sys.argv
