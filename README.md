@@ -28,9 +28,9 @@ EEEEE <br />
 0 3 <br />
 0 4 <br />
 
-specifies a board of 5x5 dimensions (line 1), starting point of (1,2) (line 2), 5 moves to the right (line 3), and walls all along the left side of the board (lines 4-8). <br />
-if any of these inputs are not compatible with the game, an appropriate error message and explanation will appear on the terminal. the edge cases that informed these error messages (and other possible games) can be viewed in the test-cases.txt. <br />
-if the inputs are good, the game will run, and the outcome will display on the terminal, with the first line referring to the final position of the pacman and the second line referring to the number of coins you collected! <br />
+This specifies a board of 5x5 dimensions (line 1), starting point of (1,2) (line 2), 5 moves to the right (line 3), and walls all along the left side of the board (lines 4-8). <br /><br />
+if any of these inputs are not compatible with the game, an appropriate error message and explanation will appear on the terminal. the edge cases that informed these error messages (and other possible games) can be viewed in the test-cases.txt. <br /><br />
+if the inputs are good, the game will run, and the outcome will display on the terminal, with the first line referring to the final position of the pacman and the second line referring to the number of coins you collected! <br /><br />
 finally, for visualization, the starting and ending position of the board is saved and displayed on the game-file.txt document. <br />
 
 ## hope you have a good game!
