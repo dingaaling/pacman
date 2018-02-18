@@ -8,8 +8,11 @@ from gameFunctions import *
 # Read input-file.txt for game intializations: board dim, starting position, moves, and walls
 def main():
 
+    args = sys.argv
+    fileName = str(args[1])
+
     inputVal = []
-    for line in open("input-file.txt"):
+    for line in open(fileName):
         line = line.strip().split(' ')
         inputVal.append(line)
 
