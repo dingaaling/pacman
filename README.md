@@ -3,14 +3,14 @@ PAC-MAN esque game in Python 3
 <br />
 ## functions and files
 <br />
-######pacman.py <br />
+###### pacman.py <br />
 serves as the main, reading the input-file, running the game, and saving to the output-file <br />
-######gameFunctions.py <br />
+###### gameFunctions.py <br />
 contain the main game functions<br /> <br />
-######input: input-file.txt <br />
+###### input: input-file.txt <br />
 specifies board dimensions, starting position, "NESW" moves, and wall positions on the board <br />
-######output: game-file.txt <br />
+###### output: game-file.txt <br />
 saves visualizations of the starting and ending board with walls denoted by nan, 0 the position of pacman, and 1 as any other space <br />
-######other: test-cases.txt <br />
+###### other: test-cases.txt <br />
 contains test cases used to build/refine the game
 
