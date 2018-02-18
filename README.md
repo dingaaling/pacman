@@ -14,3 +14,23 @@ saves visualizations of the starting and ending board with walls denoted by nan,
 other: test-cases.txt
 contains test cases used to build/refine the game
 
+## playing the game
+<br />
+
+to play the game, edit the input file to the desired game and moves you'd like. for example: <br />
+
+5 5 <br />
+1 2 <br />
+EEEEE <br />
+0 0 <br />
+0 1 <br />
+0 2 <br />
+0 3 <br />
+0 4 <br />
+
+specifies a board of 5x5 dimensions (line 1), starting point of (1,2) (line 2), 5 moves to the right (line 3), and walls all along the left side of the board (lines 4-8). <br />
+if any of these inputs are not compatible with the game, an appropriate error message and explanation will appear on the terminal. the edge cases that informed these error messages (and other possible games) can be viewed in the test-cases.txt. <br />
+if the inputs are good, the game will run, and the outcome will display on the terminal, with the first line referring to the final position of the pacman and the second line referring to the number of coins you collected! <br />
+finally, for visualization, the starting and ending position of the board is saved and displayed on the game-file.txt document. <br />
+
+## hope you have a good game!
