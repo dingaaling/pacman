@@ -1,6 +1,6 @@
 # pacman
 PAC-MAN esque game in Python 3
-<br /><br /><br />
+<br />
 ## functions and files
 <br />
 **pacman.py:** serves as the main, reading the input-file, running the game, and saving to the output-file <br />
