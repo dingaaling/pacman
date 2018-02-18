@@ -10,9 +10,9 @@ contain the main game functions<br /> <br />
 input: input-file.txt
 specifies board dimensions, starting position, "NESW" moves, and wall positions on the board <br />
 output: game-file.txt
-saves visualizations of the starting and ending board with walls denoted by nan, 0 the position of pacman, and 1 as any other space <br />
+saves visualizations of the starting and ending board with walls denoted by nan, the position of pacman by 0, and any other space by 1 <br />
 other: test-cases.txt
-contains test cases used to build/refine the game
+contains test case inputs used to build/refine the game
 
 ## playing the game
 <br />
